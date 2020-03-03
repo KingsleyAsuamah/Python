@@ -1,0 +1,10 @@
+class Portfolio:
+    def __init__ (self,n,b,prusd,prpa,quantity):
+        self.USD=n
+        self.AAPL=b
+        self.PrUsd=5
+        self.PrPA=10.5
+        self.Quantity=0
+    def investmentmethod(self,quantity)
+        return self._investmentmethod
+    
