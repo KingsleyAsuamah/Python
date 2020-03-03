@@ -1,10 +1,33 @@
 class Portfolio:
-    def __init__ (self,n,b,prusd,prpa,quantity):
-        self.USD=n
-        self.AAPL=b
+    def __init__ (self,n,b,prusd,prpa,quantityu,quantityp):
+        self.usd=n
+        self.prpa=b
         self.PrUsd=5
         self.PrPA=10.5
-        self.Quantity=0
-    def investmentmethod(self,quantity)
+        self.Quantityu=5
+        self.Quantityp=3
+    def investmentmethod(self,quantity):
         return self._investmentmethod
     
+    def valueusd(self,prusd,quantityu):
+        if quantityu=0
+        self._valueusd*prusd*quantityu
+        return self._valueusd
+            return true
+    
+    def valueprpa(self,prpa,quantityp):
+        if quantityp=0
+        self._valueusd*prpa*quantityp
+        return self._valueprpa
+    
+class portfolios:
+    portfolios=[]
+    return valueusd,valueprpa
+def retrieve():
+        return portfolios.data.pop()
+    
+#A portfolio may contain several investment assets, identified by a short symbol ('USD', 'AAPL') and with a quantity.
+#A method to invest or divest assets should be provided, together with a method to check the quantity invested in a particular asset of a portfolio.
+
+#A method should also be provided to value a portfolio. You may use a global variable prices in this method.
+#Implement the class portfolio, and provide a method to sort a list of portfolios based on value.
