@@ -1,0 +1,8 @@
+rangemax = 20
+def div_check(n):
+    for i in range(11,rangemax+1):
+        if n % i == 0:
+            continue
+        else:
+            return False
+    return True
