@@ -10,6 +10,6 @@ def div_check(n):
 if __name__ == '__main__':
    num = 2
    while not div_check(num):
-       print num
+       print (num)
        num += 2
    print (num)
