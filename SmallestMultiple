@@ -5,4 +5,11 @@ def div_check(n):
             continue
         else:
             return False
-    return True
+        return True
+        
+if __name__ == '__main__':
+   num = 2
+   while not div_check(num):
+       print num
+       num += 2
+   print (num)
