@@ -26,7 +26,7 @@ class portfolios:
 def retrieve():
         return portfolios.data.pop()
     
-#One file edited
+#One file edited again 2
 #A portfolio may contain several investment assets, identified by a short symbol ('USD', 'AAPL') and with a quantity...........
 #A method to invest or divest assets should be provided, together with a method to check the quantity invested in a particular asset of a portfolio.
 
