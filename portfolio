@@ -29,6 +29,6 @@ def retrieve():
 #One file edited again 2
 #A portfolio may contain several investment assets, identified by a short symbol ('USD', 'AAPL') and with a quantity...........
 #A method to invest or divest assets should be provided, together with a method to check the quantity invested in a particular asset of a portfolio.
-
+tried
 #A method should also be provided to value a portfolio. You may use a global variable prices in this method.
 #Implement the class portfolio, and provide a method to sort a list of portfolios based on value.
