@@ -1,0 +1,19 @@
+import time
+import random
+class Student:
+    def __init__(self,num,nam,cod):
+        if num>99999999 or len(cod)!=7:
+            raise ValueError('Incorrect Input!')
+        self.number=num
+        self.name=nam
+        self.course=cod
+        
+class StudentCollection:
+    data=[]
+    def add(st):
+        index=0
+        while index<len(StudentCollection.data) and st.number<StudentCollection.data[index].number:
+            index +=1
+        StudentCollection.data.insert(index, st)
+    def retrieve():
+        return StudentCollection.data.pop()
