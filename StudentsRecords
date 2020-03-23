@@ -17,3 +17,8 @@ class StudentCollection:
         StudentCollection.data.insert(index, st)
     def retrieve():
         return StudentCollection.data.pop()
+
+
+#To add/enter student records
+a=Student(22345678,'p','B9IS123')
+StudentCollection.add(a)
