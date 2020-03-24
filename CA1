@@ -1,1 +1,10 @@
 #https://github.com/KingsleyAsuamah/Python/new/master
+#https://github.com/KingsleyAsuamah/Python/blob/master/CA1
+
+from decimal import decimal
+from products import StoreItems
+products={'eggs': 15, 'rice': 10, 'flour':5}
+
+product_store = StoreItems(products)
+
+class Basket:
