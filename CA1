@@ -1,10 +1,38 @@
-#https://github.com/KingsleyAsuamah/Python/new/master
 #https://github.com/KingsleyAsuamah/Python/blob/master/CA1
 
-from decimal import decimal
+from decimal import Decimal
 from products import StoreItems
 products={'eggs': 15, 'rice': 10, 'flour':5}
 
-product_store = StoreItems(products)
+class Cart(object):
 
+    def get_total(self):
+        '''Return sum of cart items as a Decimal.'''
+        return Decimal(0)
+
+
+    def basket(self):
+        my_products=StoreItems(products)
+        self.assertTrue(type(cart.get_total()) is Decimal)
+
+
+class Discount(object):
+
+    def __init__(self, product):
+        self.products = products
+
+#add product to basket
 class Basket:
+    my_products=StoreItems(products)
+    products.add('eggs',10)
+    products.add('rice',15)
+    products.add('flour', 5)
+
+#basket total
+    total = products.get_total()
+
+#Eligible for Discount?
+Basket_Discount = products.get_total(discount)
+no_discount_eggs = no_discount('eggs')
+no_discount_rice = no_discount('rice')
+no_discount_flour = no_discount('flour')
