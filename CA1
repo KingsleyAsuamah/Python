@@ -21,8 +21,12 @@ class Discount(object):
     def __init__(self, product):
         self.products = products
 
+    def calculate_line_total(self, Basket_Discount, Storeitems, *0.2):
+        return my_products.get_line_total(Storeitems)
+
+        
 #add product to basket
-class Basket:
+class Basket(self,products):
     my_products=StoreItems(products)
     products.add('eggs',10)
     products.add('rice',15)
@@ -32,7 +36,19 @@ class Basket:
     total = products.get_total()
 
 #Eligible for Discount?
-Basket_Discount = products.get_total(discount)
-no_discount_eggs = no_discount('eggs')
-no_discount_rice = no_discount('rice')
-no_discount_flour = no_discount('flour')
+    Basket_Discount = products.get_total(discount)
+    no_discount_eggs = no_discount('eggs')
+    no_discount_rice = no_discount('rice')
+    no_discount_flour = no_discount('flour')
+    discount_eggs = discounteggs('eggs', 1, eggs20)
+
+
+def value(self):
+
+        total=0
+
+        for k,v in self.products.items():
+
+            total+=v*discount[k]
+
+        return total
