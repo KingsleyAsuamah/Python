@@ -7,18 +7,32 @@
 
 from decimal import Decimal
 from products import StoreItems
-products={'eggs': 15, 'rice': 10, 'flour':5}
+import numpy as np
+product_price={'eggs':25,'fish':35,'bread':24}
+basket_1={'eggs':20,'fish':5,'bread':15}
+basket_2={'rice':5,'bacon':15,'bread':10}
+basket_3={'fish':5,'candy':7,'biscuit':12}
+disc_eggs20=20
 
-class Cart(object):
+#info
+print("Available Basket Options")
+print("1: Basket_1 items & Quantity= Eggs:20, Fish: 5, Bread:15")
+print("2: Basket_2 items & Quantity={Rice:5, Bacon:15, Bread:10")
+print("2: Basket_3 items & Quantity={Fish:5, Candy:15, Biscuit:10")
 
-    def get_total(self):
-        '''Return sum of cart items as a Decimal.'''
-        return Decimal(0)
-
-
-    def basket(self):
-        my_products=StoreItems(products)
-        self.assertTrue(type(cart.get_total()) is Decimal)
+#Calculations and converted arrays from dict
+p=np.array([2, 3, 4])
+b1=np.array([1, 5, 15])
+b2=np.array([5, 15, 10])
+choice=int(input("select a basket number: "))
+if choice<1:
+  print("you didnt enter a valid number")
+elif choice==1:
+          Basket_total=p*b1
+          print(np.sum(Basket_total))
+elif choice==2:
+         Basket_total=p*b2
+         print(np.sum(Basket_total))
 
 
 class Discount(object):
