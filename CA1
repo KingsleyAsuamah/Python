@@ -8,70 +8,46 @@
 from decimal import Decimal
 from products import StoreItems
 import numpy as np
-product_price={'eggs':25,'fish':35,'bread':24}
-basket_1={'eggs':20,'fish':5,'bread':15}
-basket_2={'rice':5,'bacon':15,'bread':10}
-basket_3={'fish':5,'candy':7,'biscuit':12}
+product_price={'eggs':25,'rice':35,'flour':24}
+basket_1={'eggs':10,'rice':5,'flour':15}
+basket_2={'eggs':35,'rice':15,'flour':30}
+basket_3={'eggs':55,'rice':77,'flour':120}
+#discount code for 20 eggs purchase
 disc_eggs20=20
 
-#info
+#user_info
 print("Available Basket Options")
-print("1: Basket_1 items & Quantity= Eggs:20, Fish: 5, Bread:15")
-print("2: Basket_2 items & Quantity={Rice:5, Bacon:15, Bread:10")
-print("2: Basket_3 items & Quantity={Fish:5, Candy:15, Biscuit:10")
+print("1: Basket_1 items & Quantity= Eggs:10, Rice: 5, Flour:15")
+print("2: Basket_2 items & Quantity= Eggs:35, Rice:15, Flour:30")
+print("2: Basket_3 items & Quantity= Eggs:55, Rice:77, Flour:120")
+print("----------------------------------------------------------")
 
 #Calculations and converted arrays from dict
-p=np.array([2, 3, 4])
-b1=np.array([1, 5, 15])
-b2=np.array([5, 15, 10])
-choice=int(input("select a basket number: "))
-if choice<1:
-  print("you didnt enter a valid number")
-elif choice==1:
-          Basket_total=p*b1
-          print(np.sum(Basket_total))
-elif choice==2:
-         Basket_total=p*b2
-         print(np.sum(Basket_total))
+p=np.array([25, 35, 24])
+b1=np.array([10, 5, 15])
+b2=np.array([35, 15, 30])
+b3=np.array([55, 77, 120])
+
+#Basket Seection
+c_choice=int(input("Please select a Basket between 1 and 3: "))
+if c_choice<=0:
+  print("Invalid number selected")
+elif c_choice==1:
+    Basket_total=(p*b1)
+    basket1_value= (np.sum(Basket_total)-disc_eggs20)
+    print("The Value of Basket_1 is: ", basket1_value)
+    print("Discount of N20 is applied")
+
+elif c_choice==2:
+  Basket_total=(p*b2)
+  print(Basket_total)
 
 
-class Discount(object):
-
-    def __init__(self, product):
-        self.products = products
-
-    def calculate_line_total(self, Basket_Discount, Storeitems, *0.2):
-        return my_products.get_line_total(Storeitems)
-
-        
-#add product to basket
-class Basket(self,products):
-    my_products=StoreItems(products)
-    products.add('eggs',10)
-    products.add('rice',15)
-    products.add('flour', 5)
-
-#basket total
-    total = products.get_total()
-
-#Eligible for Discount?
-    Basket_Discount = products.get_total(discount)
-    no_discount_eggs = no_discount('eggs')
-    no_discount_rice = no_discount('rice')
-    no_discount_flour = no_discount('flour')
-    discount_eggs = discounteggs('eggs', 1, eggs20)
-
-
-def value(self):
-
-        total=0
-
-        for k,v in self.products.items():
-
-            total+=v*discount[k]
-
-        return total
-
+elif c_choice==4:
+         Basket_total=2*b2
+         print(Basket_total)
+if c_choice>3:
+  print("Invalid number selected")
 
 
 
