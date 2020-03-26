@@ -1,4 +1,5 @@
 #https://github.com/KingsleyAsuamah/Python/blob/master/CA1
+https://github.com/KingsleyAsuamah/Python/edit/master/CA1
 
 #Please code a solution to the following problem, tracking your progress by commiting to GitHub, and submitting your progress after half an hour and after an hour to Moodle, as well as the final submission. 
 #A shopping basket contains a number of line items, for example: eggs, rice, flour; each with a specific quantity. A basket may also have one discount code, for example eggs20. 
@@ -73,5 +74,5 @@ for i in range (Basket):
 print("Basket Value in Highest Order is : ", sorted(BasketSort, reverse=True))
 
 
-
+https://github.com/KingsleyAsuamah/Python/edit/master/CA1
 #https://github.com/KingsleyAsuamah/Python/blob/master/CA1
