@@ -69,7 +69,7 @@ for i in range (Basket):
             BasketSort[i] = BasketSort[j]
             BasketSort[j] = temp
 
-print("Basket Value in Highest Order is : ", BasketSort)
+print("Basket Value in Highest Order is : ", sorted(BasketSort, reverse=True))
 
 
 
